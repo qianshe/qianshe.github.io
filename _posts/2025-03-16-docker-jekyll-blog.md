@@ -2,7 +2,7 @@
 layout: post
 title: 使用 Docker 和 AI 驱动的 Jekyll 博客系统构建
 categories: [技术, Docker, AI]
-date: 2024-03-16
+date: 2025-03-16
 ---
 
 ## 项目介绍
