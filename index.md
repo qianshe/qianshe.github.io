@@ -24,7 +24,7 @@ title: 首页
 ## 联系方式
 
 ## 其他
-
+[{{ post.title }}] ({{ ./archive.md }})
 
 # 文章列表
 
