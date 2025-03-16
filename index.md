@@ -5,28 +5,28 @@ title: 首页
 
 ## 个人信息
 
-// 在这里添加个人信息
+- 姓名：QianShe
+- 地点：北京
 
 ## 教育背景
 
-// 在这里添加教育背景
-
-## 工作经历
-
-// 在这里添加工作经历
-
-## 项目经历
-
-// 在这里添加项目经历
+- 本科：软件工程专业
+- 毕业年份：2019
 
 ## 技术栈
 
-// 在这里添加技术栈
+- 前端：HTML, CSS, JavaScript, Vue.js
+- 后端：Java, Python, Go
+- 框架：Spring
+- 数据库：MySQL, Redis
+- 中间件：Nginx, kafka, RibbitMQ
+- 其他：Git, Docker
 
-## 自我评价
+## 当前兴趣
 
-// 在这里添加自我评价
+- 本地部署Deepseek, AnythingLLM
+- 各种AI模型的混合应用实践，如：MCP，Agent编排等 
 
-## 联系方式
+---
 
-// 在这里添加联系方式
+[关于我]({{ '/about/' | relative_url }})

@@ -1,0 +1,11 @@
+{% assign site_lang = site.lang | default: 'zh' %}
+
+{% if jekyll.environment == "production" %}
+  <script>
+    if (!localStorage.getItem('interface_lang')) {
+      localStorage.setItem('interface_lang', 'zh');
+    }
+  </script>
+{% endif %}
+
+{% assign current_interface_lang = 'zh' %}
