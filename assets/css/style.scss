@@ -45,3 +45,30 @@
     }
   }
 }
+
+.warning {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ffeeba;
+  border-radius: 4px;
+}
+
+.post-meta {
+  color: #666;
+  margin-bottom: 20px;
+  
+  time, .categories {
+    margin-right: 15px;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

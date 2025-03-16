@@ -24,3 +24,8 @@ title: 首页
 ## 联系方式
 
 ## 其他
+
+
+# 文章列表
+
+{% for post in site.posts %}

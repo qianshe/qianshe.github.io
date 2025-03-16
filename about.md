@@ -16,3 +16,6 @@
 ## 如何插入新内容
 
 要在各个标题中插入新内容，可以在`src/_posts`文件夹中创建新的Markdown文件，命名为`YYYY-MM-DD-新标题.md`，并在文件中使用Markdown语法编写内容。
+
+例如：
+[这是新内容页](./_posts/2024-01-01-hello-world.md)
