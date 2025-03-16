@@ -77,3 +77,62 @@
     }
   }
 }
+
+.home-content {
+  h2 {
+    color: #155799;
+    margin-bottom: 1.5rem;
+  }
+  
+  h3 {
+    margin-bottom: 0.5rem;
+    
+    a {
+      color: #2c3e50;
+      text-decoration: none;
+      
+      &:hover {
+        color: #007bff;
+      }
+    }
+  }
+
+  hr {
+    margin: 2rem 0;
+    border: 0;
+    border-top: 1px solid #eaecef;
+  }
+}
+
+.site-nav {
+  text-align: center;
+  padding: 1rem 0;
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    
+    &:hover {
+      background: rgba(255,255,255,0.1);
+    }
+  }
+}
+
+.category-page {
+  h1 {
+    color: #155799;
+    margin-bottom: 2rem;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+    
+    li {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
