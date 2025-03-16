@@ -1,9 +1,30 @@
 ---
 layout: default
 ---
+{% include helpers.html %}
 
 <div class="category-page">
-  <h1>分类: {{ page.category }}</h1>
+  <h1 class="category-title" data-zh="分类:" data-en="Categories:" data-category="{{ page.category }}">
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const titleEl = document.querySelector('.category-title');
+        const lang = localStorage.getItem('interface_lang') || 'zh';
+        const prefix = titleEl.dataset[lang];
+        const category = titleEl.dataset.category;
+        titleEl.textContent = `${prefix} ${category}`;
+      });
+
+      // 监听语言变化，实时更新标题
+      window.addEventListener('storage', (e) => {
+        if (e.key === 'interface_lang') {
+          const titleEl = document.querySelector('.category-title');
+          const prefix = titleEl.dataset[e.newValue];
+          const category = titleEl.dataset.category;
+          titleEl.textContent = `${prefix} ${category}`;
+        }
+      });
+    </script>
+  </h1>
   
   <ul class="post-list">
     {% for post in site.categories[page.category] %}

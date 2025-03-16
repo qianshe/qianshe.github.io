@@ -7,3 +7,5 @@ Gemfile.lock
 *.gem
 .bundle
 .DS_Store
+.docker
+docker-compose.override.yml

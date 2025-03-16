@@ -1,31 +1,100 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
-    {% include head.html %}
-  </head>
-  <body>
-    <header class="page-header" role="banner">
-      <h1 class="project-name">{{ site.title }}</h1>
-      {% if site.description %}
+<html lang="{% if page.lang %}{{ page.lang }}{% else %}zh{% endif %}">
+
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  {% include head.html %}
+</head>
+
+<body>
+  <header class="page-header" role="banner">
+    <div class="header-container">
+      <div class="title-section">
+        <h1 class="project-name">
+          <a href="{% if page.lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">
+            {{ site.title }}
+          </a>
+        </h1>
+        {% if site.description %}
         <h2 class="project-tagline">{{ site.description }}</h2>
-      {% endif %}
-    </header>
-
-    <main class="main-content">
-      <div class="container">
-        <div class="content">
-          {{ content }}
-        </div>
-        {% include sidebar.html %}
+        {% endif %}
       </div>
-    </main>
+      <div class="lang-switch-container">
+        <a href="#" class="nav-link lang-switch" onclick="toggleLanguage(event)">
+          <span class="lang-text" data-zh="English" data-en="中文"></span>
+        </a>
+      </div>
+    </div>
+  </header>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const lang = localStorage.getItem('interface_lang') || 'zh';
+      updateAllElements(lang);
+    });
 
-    {% if site.github.is_project_page %}
-      <footer class="site-footer">
-        <span class="site-footer-credits">{{ site.title }} © {{ site.time | date: '%Y' }}</span>
-      </footer>
-    {% endif %}
-  </body>
+    function toggleLanguage(event) {
+      event.preventDefault();
+      const currentLang = localStorage.getItem('interface_lang') || 'zh';
+      const newLang = currentLang === 'zh' ? 'en' : 'zh';
+      localStorage.setItem('interface_lang', newLang);
+      
+      const currentPath = window.location.pathname;
+      const isContentPage = currentPath.includes('/posts/') || 
+                          currentPath.includes('/categories/') ||
+                          currentPath.endsWith('.html');
+      
+      if (isContentPage) {
+        updateAllElements(newLang);
+      } else {
+        if (newLang === 'en') {
+          window.location.href = '/en' + currentPath;
+        } else {
+          window.location.href = currentPath.replace('/en/', '/');
+        }
+      }
+    }
+
+    function updateAllElements(lang) {
+      // 更新语言切换按钮
+      const langText = document.querySelector('.lang-text');
+      langText.textContent = langText.dataset[lang];
+
+      // 更新侧边栏
+      document.querySelectorAll('.sidebar-content').forEach(el => {
+        el.style.display = el.dataset.interfaceLang === lang ? 'block' : 'none';
+      });
+
+      // 更新分类文本
+      document.querySelectorAll('.categories').forEach(el => {
+        const categoryText = lang === 'en' ? 'Categories:' : '分类:';
+        el.innerHTML = el.innerHTML.replace(/(Categories:|分类:)/, categoryText);
+      });
+    }
+
+    // 监听其他标签页的语言变化
+    window.addEventListener('storage', (e) => {
+      if (e.key === 'interface_lang') {
+        updateAllElements(e.newValue);
+      }
+    });
+  </script>
+
+  <main class="main-content">
+    <div class="container">
+      <div class="content">
+        {{ content }}
+      </div>
+      {% include sidebar.html %}
+    </div>
+  </main>
+
+  {% if site.github.is_project_page %}
+  <footer class="site-footer">
+    <span class="site-footer-credits">{{ site.title }} © {{ site.time | date: '%Y' }}</span>
+  </footer>
+  {% endif %}
+</body>
+
 </html>

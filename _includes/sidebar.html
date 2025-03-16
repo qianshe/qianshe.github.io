@@ -1,21 +1,69 @@
+{% include helpers.html %}
 <div class="sidebar">
-  <!-- 最近文章列表 -->
-  <h2>最近文章</h2>
-  <ul class="post-list">
-    {% for post in site.posts limit:5 %}
-      <li>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="sidebar-content" data-interface-lang="zh">
+    <!-- 最近文章列表 -->
+    <h2>最近文章</h2>
+    <ul class="post-list">
+      {% for post in site.posts limit:5 %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
 
-  <!-- 文章分类列表 -->
-  <h2>文章分类</h2>
-  <ul class="category-list">
-    {% for category in site.categories %}
-      <li>
-        <a href="/categories/{{ category[0] }}">{{ category[0] }} ({{ category[1].size }})</a>
-      </li>
-    {% endfor %}
-  </ul>
+    <!-- 文章分类列表 -->
+    <h2>文章分类</h2>
+    <ul class="category-list">
+      {% for category in site.categories %}
+        <li>
+          <a href="/categories/{{ category[0] }}" class="category-link">
+            {{ category[0] }} ({{ category[1].size }})
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <!-- 查看所有文章 -->
+    <h2>所有文章</h2>
+    <a href="/archive/">查看所有文章</a>
+  </div>
+  <div class="sidebar-content" data-interface-lang="en" style="display:none;">
+    <!-- Recent Posts -->
+    <h2>Recent Posts</h2>
+    <ul class="post-list">
+      {% for post in site.posts limit:5 %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <!-- Categories -->
+    <h2>Categories</h2>
+    <ul class="category-list">
+      {% for category in site.categories %}
+        <li>
+          <a href="/categories/{{ category[0] }}" class="category-link">
+            {{ category[0] }} ({{ category[1].size }})
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <!-- View All Posts -->
+    <h2>All Posts</h2>
+    <a href="/en/archive/">View All Posts</a>
+  </div>
 </div>
+
+<script>
+  function updateSidebar() {
+    const lang = localStorage.getItem('interface_lang') || 'zh';
+    document.querySelectorAll('.sidebar-content').forEach(el => {
+      el.style.display = el.dataset.interfaceLang === lang ? 'block' : 'none';
+    });
+  }
+  
+  document.addEventListener('DOMContentLoaded', updateSidebar);
+  window.addEventListener('storage', updateSidebar);
+</script>

@@ -1,22 +1,19 @@
 remote_theme: pages-themes/cayman@v0.2.0
-title: 您的网站标题
-description: 网站描述
-author: QianShe
-theme: minima
-permalink: /:year/:month/:day/:title/
+title: Qianshe's homepage
+description: Bookmark this to keep an eye on my project updates!
 
-baseurl: "" # 如果您的站点在子目录下，请设置这个值
-url: "https://qianshe.github.io"
+baseurl: ""
+url: ""
 markdown: kramdown
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-remote-theme
   - jekyll-sitemap
 
-# 分页设置
-paginate: 5
-paginate_path: "/blog/page:num/"
+# 语言设置
+default_lang: zh
+fallback_lang: zh
 
 defaults:
   -
@@ -25,16 +22,4 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "QianShe"
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
-
-# 排除文件
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
+      author: "你的名字"
