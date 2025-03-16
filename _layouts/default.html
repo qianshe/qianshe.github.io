@@ -2,17 +2,33 @@
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
-    {% include head.html %}
   </head>
   <body>
-    {% include header.html %}
-    <div class="container">
-      <main class="content">
-        {{ content }}
-      </main>
-      {% include sidebar.html %}
-    </div>
-    {% include footer.html %}
+    <header class="page-header" role="banner">
+      <h1 class="project-name">{{ site.title }}</h1>
+      {% if site.description %}
+        <h2 class="project-tagline">{{ site.description }}</h2>
+      {% endif %}
+    </header>
+
+    <main class="main-content">
+      <div class="container">
+        <div class="content">
+          {{ content }}
+        </div>
+        {% include sidebar.html %}
+      </div>
+    </main>
+
+    {% if site.github.is_project_page %}
+      <footer class="site-footer">
+        <span class="site-footer-credits">{{ site.title }} © {{ site.time | date: '%Y' }}</span>
+      </footer>
+    {% endif %}
   </body>
 </html>
