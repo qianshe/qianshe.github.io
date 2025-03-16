@@ -1,3 +1,24 @@
-theme: jekyll-theme-cayman
-title: Qianshe's homepage
-description: Bookmark this to keep an eye on my project updates!
+remote_theme: pages-themes/cayman@v0.2.0
+title: 我的博客
+description: 个人博客网站
+author: QianShe
+theme: minima
+permalink: /:year/:month/:day/:title/
+
+baseurl: ""
+url: "https://qianshe.github.io"
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+  - jekyll-sitemap
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "QianShe"
