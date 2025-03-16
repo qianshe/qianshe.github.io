@@ -1,0 +1,19 @@
+<div class="sidebar">
+  <h2>最近文章</h2>
+  <ul class="post-list">
+    {% for post in site.posts limit:5 %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h2>文章分类</h2>
+  <ul class="category-list">
+    {% for category in site.categories %}
+      <li>
+        <a href="/categories/{{ category[0] }}">{{ category[0] }} ({{ category[1].size }})</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
