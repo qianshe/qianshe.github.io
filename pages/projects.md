@@ -17,14 +17,35 @@ permalink: /projects/
 - **项目链接**: [在线预览](https://qianshe.github.io)
 - **源码**: [GitHub](https://github.com/qianshe/qianshe.github.io)
 
-### 其他项目1
 
-- **技术栈**: Vue.js, Node.js
-- **描述**: 这是项目1的详细描述...
-- **项目链接**: [查看详情](#)
+### Algorithm
+- **描述**: 算法练习与实现
+- **技术栈**: Java
+- **项目链接**: [GitHub](https://github.com/qianshe/Algorithm)
 
-### 其他项目2
+### IM-System-Demo
+- **描述**: 即时通讯系统演示
+- **技术栈**: Go
+- **功能特点**:
+  - 携程 Goroutine 实现并发
+  - 基于 socket.io 实现长连接
+- **项目链接**: [GitHub](https://github.com/qianshe/IM-System-Demo)
 
-- **技术栈**: React, TypeScript
-- **描述**: 这是项目2的详细描述...
-- **项目链接**: [查看详情](#)
+### miniprogram1
+- **描述**: 我的第一个小程序
+- **技术栈**: 微信小程序
+- **功能特点**:
+  - 微信小程序学习
+  - 页面跳转
+  - 数据传递
+  - 组件使用
+- **项目链接**: [GitHub](https://github.com/qianshe/miniprogram1)
+
+### miniprogram-Java
+- **描述**: miniprogram1 项目Java后端
+- **技术栈**: Java, Spring Boot, MyBatis-plus , MySQL, Redis
+- **功能特点**:
+  - JWT 鉴权
+  - 多级缓存
+  - 数据库操作
+- **项目链接**: [GitHub](https://github.com/qianshe/miniprogram-Java)
