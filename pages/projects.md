@@ -49,3 +49,12 @@ permalink: /projects/
   - 多级缓存
   - 数据库操作
 - **项目链接**: [GitHub](https://github.com/qianshe/miniprogram-Java)
+
+### ceremony-web
+- **描述**: 丧葬服务管理系统前端
+- **技术栈**: Vue.js, Element Plus
+- **功能特点**:
+  - 用户管理
+  - 服务预约
+  - 数据统计
+- **项目链接**: [GitHub](https://github.com/qianshe/ceremony-web)
