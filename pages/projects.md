@@ -31,30 +31,36 @@ permalink: /projects/
   - 基于 socket.io 实现长连接
 - **项目链接**: [GitHub](https://github.com/qianshe/IM-System-Demo)
 
-### miniprogram1
-- **描述**: 我的第一个小程序
-- **技术栈**: 微信小程序
+### 全栈微信小程序系统
+- **描述**: 完整的微信小程序全栈解决方案，包含前端界面、后端服务和管理系统
+- **技术栈**: 
+  - **前端**: 微信小程序原生框架
+  - **后端**: Java, Spring Boot, MyBatis-plus, MySQL, Redis
+  - **管理系统**: Vue.js, Element Plus
 - **功能特点**:
-  - 微信小程序学习
-  - 页面跳转
-  - 数据传递
-  - 组件使用
-- **项目链接**: [GitHub](https://github.com/qianshe/miniprogram1)
-
-### miniprogram-Java
-- **描述**: miniprogram1 项目Java后端
-- **技术栈**: Java, Spring Boot, MyBatis-plus , MySQL, Redis
-- **功能特点**:
-  - JWT 鉴权
-  - 多级缓存
-  - 数据库操作
-- **项目链接**: [GitHub](https://github.com/qianshe/miniprogram-Java)
-
-### ceremony-web
-- **描述**: 丧葬服务管理系统前端
-- **技术栈**: Vue.js, Element Plus
-- **功能特点**:
-  - 用户管理
-  - 服务预约
-  - 数据统计
-- **项目链接**: [GitHub](https://github.com/qianshe/ceremony-web)
+  - 微信小程序用户端体验
+    - 页面流畅跳转与数据传递
+    - 组件化开发
+    - 微信生态集成
+  - 强大的后端支持
+    - JWT 鉴权机制
+    - 多级缓存策略
+    - 高效数据库操作
+  - 完善的管理系统
+    - 用户管理与权限控制
+    - 服务预约与调度
+    - 数据可视化与统计分析
+  - AI辅助开发流程
+    - 使用DeepSeek进行需求分析与系统设计
+    - 借助Cursor完成UI设计、框架初始化及关键功能实现
+    - 通过VSCode Copilot实现代码微调与能力构建
+    - AI驱动的问题诊断与解决方案
+  - 容器化部署能力
+    - 使用Docker实现服务隔离与环境一致性
+    - 通过docker-compose实现一键部署整套系统
+    - 多环境配置与服务编排
+    - 自动化构建与持续集成支持
+- **相关项目链接**: 
+  - [小程序前端](https://github.com/qianshe/miniprogram1)
+  - [Java后端服务](https://github.com/qianshe/miniprogram-Java)
+  - [管理系统前端](https://github.com/qianshe/ceremony-web)
