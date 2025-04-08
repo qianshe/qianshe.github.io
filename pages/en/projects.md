@@ -64,3 +64,15 @@ permalink: /en/projects/
   - [Mini Program Frontend](https://github.com/qianshe/miniprogram1)
   - [Java Backend Service](https://github.com/qianshe/miniprogram-Java)
   - [Management System Frontend](https://github.com/qianshe/ceremony-web)
+
+### ceremony-server-ai
+- **Description**: AI service capabilities for Funeral Service
+- **Tech Stack**: SpringAI, Java
+- **Features**:
+  - Base model integration
+  - Function call support
+  - MCP protocol integration
+  - Natural language processing
+  - Intelligent recommendation system
+  - Data analysis and prediction
+- **Project Link**: [GitHub](https://github.com/qianshe/ceremony-server-ai)

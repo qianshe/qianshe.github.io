@@ -64,3 +64,15 @@ permalink: /projects/
   - [小程序前端](https://github.com/qianshe/miniprogram1)
   - [Java后端服务](https://github.com/qianshe/miniprogram-Java)
   - [管理系统前端](https://github.com/qianshe/ceremony-web)
+
+### ceremony-server-ai
+- **描述**: 福寿礼坊AI服务能力
+- **技术栈**: SpringAI, Java
+- **功能特点**:
+  - 基础模型接入能力
+  - Function call支持
+  - MCP协议接入
+  - 自然语言处理
+  - 智能推荐系统
+  - 数据分析与预测
+- **项目链接**: [GitHub](https://github.com/qianshe/ceremony-server-ai)
