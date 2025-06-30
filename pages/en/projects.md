@@ -76,3 +76,26 @@ permalink: /en/projects/
   - Intelligent recommendation system
   - Data analysis and prediction
 - **Project Link**: [GitHub](https://github.com/qianshe/ceremony-server-ai)
+
+## Other Projects
+
+### fantasy
+- **Description**: An innovative personal project aiming to provide a platform for free blueprint drawing and creative realization, supporting various visualization tools and collaboration features.
+- **Tech Stack**: Private Repository (details not public)
+- **Project Link**: Private Repository
+- **Created At**: 2025-06-27
+- **Highlights**:
+  - Custom blueprint drawing
+  - Real-time multi-user collaboration
+  - Extensible plugin system
+
+### user-center
+- **Description**: Unified user center providing authentication, gateway authorization, and permission management, suitable for multi-system integration scenarios.
+- **Tech Stack**: Java, Spring Boot, OAuth2, JWT
+- **Features**:
+  - User registration, login, password recovery
+  - OAuth2/JWT single sign-on
+  - Gateway authorization and fine-grained permission control
+  - Logging and security auditing
+- **Project Link**: [GitHub](https://github.com/qianshe/user-center)
+- **Created At**: 2025-06-30
