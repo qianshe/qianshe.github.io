@@ -60,8 +60,8 @@ permalink: /projects/
     - 通过docker-compose实现一键部署整套系统
     - 多环境配置与服务编排
     - 自动化构建与持续集成支持
-- **相关项目链接**: 
-  - [小程序前端](https://github.com/qianshe/miniprogram1)
+- **相关项目链接**:
+  - [小程序前端](https://github.com/qianshe/miniprogram-wechat)
   - [Java后端服务](https://github.com/qianshe/miniprogram-Java)
   - [管理系统前端](https://github.com/qianshe/ceremony-web)
 
@@ -82,12 +82,48 @@ permalink: /projects/
 ### fantasy
 - **描述**: 个人创新项目，致力于打造一个自由绘制蓝图和创意实现的平台，支持多种可视化工具和协作功能。
 - **技术栈**: 私有仓库（技术细节未公开）
-- **项目链接**: Private Repository
+- **相关项目链接**:
+  - [前端](https://github.com/qianshe/fantasy) - Private Repository
+  - [后端](https://github.com/qianshe/fantasy-backend) - Private Repository
 - **创建时间**: 2025-06-27
 - **亮点**:
   - 支持自定义蓝图绘制
   - 多人协作与实时同步
   - 可扩展的插件系统
+
+### stellar-bridge
+- **描述**: 上下游资源通道，提供资源对接和管理能力
+- **技术栈**: 前后端分离架构
+- **相关项目链接**:
+  - [前端](https://github.com/qianshe/stellar-bridge)
+  - [后端](https://github.com/qianshe/stellar-bridge-backend) - Private Repository
+- **创建时间**: 2025-08-21
+
+### augment-token-manager-worker
+- **描述**: cf可部署的augManager，基于Cloudflare Worker的token管理服务
+- **技术栈**: Cloudflare Worker
+- **项目链接**: [GitHub](https://github.com/qianshe/augment-token-manager-worker)
+- **创建时间**: 2025-09-20
+
+### cpl
+- **描述**: 一个轻量级的剪贴板历史记录工具，支持系统级监听和连续粘贴功能
+- **项目链接**: [GitHub](https://github.com/qianshe/cpl)
+- **创建时间**: 2025-08-15
+
+### qianshe-archive
+- **描述**: 归档项目
+- **项目链接**: [GitHub](https://github.com/qianshe/qianshe-archive)
+- **创建时间**: 2025-10-06
+
+### qianshe-platform-common
+- **描述**: 平台通用服务，提供跨项目的公共能力和基础设施
+- **项目链接**: [GitHub](https://github.com/qianshe/qianshe-platform-common)
+- **创建时间**: 2025-08-25
+
+### claude-pm
+- **描述**: Claude项目管理工具
+- **项目链接**: [GitHub](https://github.com/qianshe/claude-pm)
+- **创建时间**: 2025-10-05
 
 ### user-center
 - **描述**: 统一用户中心，提供认证、网关鉴权与权限管理能力，适用于多系统集成场景。
